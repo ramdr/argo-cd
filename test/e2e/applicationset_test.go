@@ -2324,7 +2324,7 @@ func TestSimpleSCMProviderGenerator(t *testing.T) {
 		Spec: argov1alpha1.ApplicationSpec{
 			Project: "default",
 			Source: &argov1alpha1.ApplicationSource{
-				RepoURL:        "git@github.com:argoproj/argo-cd.git",
+				RepoURL:        "https://github.com/argoproj/argo-cd.git",
 				TargetRevision: "master",
 				Path:           "guestbook",
 			},
@@ -2802,7 +2802,7 @@ func TestSimplePullRequestGeneratorGoTemplate(t *testing.T) {
 		Spec: argov1alpha1.ApplicationSpec{
 			Project: "default",
 			Source: &argov1alpha1.ApplicationSource{
-				RepoURL:        "git@github.com:applicationset-test-org/argocd-example-apps.git",
+				RepoURL:        "https://github.com/applicationset-test-org/argocd-example-apps.git",
 				TargetRevision: "824a5c987fdfb2b0629e9dbf5f31636c69ba4772",
 				Path:           "kustomize-guestbook",
 				Kustomize: &argov1alpha1.ApplicationSourceKustomize{
@@ -2832,7 +2832,7 @@ func TestSimplePullRequestGeneratorGoTemplate(t *testing.T) {
 				Spec: argov1alpha1.ApplicationSpec{
 					Project: "default",
 					Source: &argov1alpha1.ApplicationSource{
-						RepoURL:        "git@github.com:applicationset-test-org/argocd-example-apps.git",
+						RepoURL:        "https://github.com/applicationset-test-org/argocd-example-apps.git",
 						TargetRevision: "{{ .head_sha }}",
 						Path:           "kustomize-guestbook",
 						Kustomize: &argov1alpha1.ApplicationSourceKustomize{
