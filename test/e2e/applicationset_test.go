@@ -2749,7 +2749,7 @@ func TestSimplePullRequestGenerator(t *testing.T) {
 				Spec: argov1alpha1.ApplicationSpec{
 					Project: "default",
 					Source: &argov1alpha1.ApplicationSource{
-						RepoURL:        "git@github.com:applicationset-test-org/argocd-example-apps.git",
+						RepoURL:        "https://github.com/applicationset-test-org/argocd-example-apps.git",
 						TargetRevision: "{{ head_sha }}",
 						Path:           "kustomize-guestbook",
 						Kustomize: &argov1alpha1.ApplicationSourceKustomize{
